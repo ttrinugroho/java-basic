@@ -1,4 +1,4 @@
-## Tipe Data
+## Tipe Data di Java
 Java adalah bahasa yang sangat diketik; Oleh karena itu Anda harus mendeklarasikan tipe data untuk semua variabel.
 
 Karena itu Kamu harus tahu tipe data yang ada di di Java.
@@ -30,14 +30,16 @@ Masing-masing kelompok di bagi lagi menurut batas minimal dan maksimal yang bisa
 Sekarang kita coba membuat variable dengan macam-macam tipe data number di Java
 ```java
 public class TypeDataNumber {
-    byte thisByte = 100;
-    short thisShort = 1000;
-    int thisInt = 10000000;
-    long thisLong = 1000000000;
-    long thisLong2 = 1000000000L;
-
-    float thisFloat = 10.10F;
-    double thisDouble = 10.10;
+    public static void main(String[] args) {
+        byte thisByte = 100;
+        short thisShort = 1000;
+        int thisInt = 10000000;
+        long thisLong = 1000000000;
+        long thisLong2 = 1000000000L;
+    
+        float thisFloat = 10.10F;
+        double thisDouble = 10.10;
+    }
 }
 ```
 Untuk tipe data `float` dan `long` agak sedikit berbeda;
@@ -48,14 +50,16 @@ Di Java kita juga bisa menambahkan garis bawah (`_`) pada data. Java tidak menga
 
 ```java
 public class TypeDataNumber {
-    byte thisByte = 100;
-    short thisShort = 1_000;
-    int thisInt = 10_000_000;
-    long thisLong = 1_000_000_000;
-    long thisLong2 = 1_000_000_000L;
-
-    float thisFloat = 10.10F;
-    double thisDouble = 10.10;
+    public static void main(String[] args) {
+        byte thisByte = 100;
+        short thisShort = 1_000;
+        int thisInt = 10_000_000;
+        long thisLong = 1_000_000_000;
+        long thisLong2 = 1_000_000_000L;
+    
+        float thisFloat = 10.10F;
+        double thisDouble = 10.10;
+    }
 }
 ```
 Sekarang kita bisa membaca angka pada kode program diatas lebih mudah dibandingkan tanpa garis bawah.
@@ -103,9 +107,13 @@ public class WideningCasting {
 #### Narrowing Casting (manual)
 Sedangkan Narrowing Casting terjadi dimana tipe data dengan data tampung lebih besar dikonversi ke tipe data dengan daya tampung lebih kecil. Seperti ini urutannya:
 
-```double -> float -> long -> int -> short -> byte```
+```
+double -> float -> long -> int -> short -> byte
+```
 Untuk melakukan narrowing casting, kita wajib menyebutkan tipe datanya secara eksplicit ketika melakukan konversi:
-```TipeData variable = (TipeData) dariVariable;```
+```
+TipeData variable = (TipeData) dariVariable;
+```
 ```java
 public class NarrowingCasting {
     public static void main(String[] args) {
@@ -115,7 +123,7 @@ public class NarrowingCasting {
     }
 }
 ```
-### Masalah
+### Masalah Pada Converting Data Number
 Hati-hati jika melakukan konversi tipe data number secara narrowing, terutama ketika data nya melebihi kapasitas yang dituju. Misal ketika data int 1000000 di konversi ke short, maka 1000000 tersebut tidak bisa ditampung oleh short, maka secara otomatis akan terjadi number overflow (kelebihan number)
 
 Hal ini tidak akan menjadikan error, hanya saja, number di variable byte nilainya akan berbeda dari int, number overflow akan kembali lagi ke bilangan minimal awal sebuah tipe data number.
@@ -123,7 +131,6 @@ Hal ini tidak akan menjadikan error, hanya saja, number di variable byte nilainy
 ```java
 public class KonversiNumberOverflow {
   public static void main(String[] args) {
-
     int iniInt = 128;
     byte iniByte = (byte) iniInt;
     System.out.println(iniByte); // -128
@@ -137,3 +144,131 @@ public class KonversiNumberOverflow {
 Pada kode diatas, iniByte akan menghasilkan -128, karena maksimal data tampung byte adalah 127, sehingga terjadi number overflow, dan kelebihan 1 nya akan berputar ke angka paling awal lagi, yaitu -128.
 
 Sedangkan iniByte2 akan bernilai -127, karena 129 melebihi maksimal data tampung byte adalah 127, sehingga menjadi number overflow, dan kelebihannya dalah 2, sehingga berputar ke angka byte paling awal yaitu -128, namun karena overflow nya sebesar 2 angka, berarti setelah -128, dia naik ke -127.
+
+### Tipe Data Boolean
+Di Java tipe data ini direpresentasikan dengan kata kunci boolean, dan untuk nilai benar direpresentasikan dengan kata kunci true, sedangkan untuk salah direpresentasikan dengan kata kunci false.
+```java
+public class TipeDataBoolean {
+
+  public static void main(String[] args) {
+    // ini adalah nilai benar
+    boolean benar = true;
+    
+    // ini adalah nilai salah
+    boolean salah = false;
+
+    System.out.println(benar);
+    System.out.println(salah);
+
+  }
+}
+```
+### Tipe Data Character
+Karakter di Java merupakan karakter 16-bit Unicode.
+
+Tipe data karakter direpresentasikan di Java menggunakan kata kunci char. Dan untuk membuat data karakter di Java, kita perlu menggunakan tanda ' (petik satu) sebelum dan setelah karakternya.
+```java
+
+public class TipeDataChar {
+  
+  public static void main(String[] args) {
+    
+    char e = 'E';
+    char k = 'K';
+    char o = 'O';
+    
+    System.out.println(e);
+    System.out.println(k);
+    System.out.println(o);
+  }
+}
+```
+Karakter adalah tipe data yang sangat sederhana. Jika kita gabungkan beberapa karaketer menjadi satu kesatuan, di Java tipe data tersebut dinamakan String. Tipe data String akan kita bahas lebih detail di artikel terpisah.
+
+### Tipe Data String
+Di Java, string direpresentasikan dengan kata kunci String. Dan untuk membuat data String, kita bisa menggunakan " (petik dua) lalu diikuti dengan isi string nya, dan diakhiri dengan " (petik dua) lagi.
+
+```java
+public class TipeDataString {
+
+  public static void main(String[] args) {
+
+    String firstName = "Eko Kurniawan";
+    String lastName = "Khannedy";
+
+    System.out.println(firstName);
+    System.out.println(lastName);
+  }
+  
+}
+```
+#### Menggabungkan Tipe Data String
+Saat membuat aplikasi, biasanya kita sering menggabungkan beberapa String. Dan di Java, kita bisa menggabungkan data String dengan String yang lain menggunakan operator + (tambah). Ketika kita tambahkan data String dengan String lain, maka dia akan membentuk data String baru, tidak akan menggubah data String yang lama.
+
+Tidak ada batasan untuk menambah String, kita bisa gunakan banyak operator + (tambah) sebanyak yang kita mau. Batasan pembuatan String hanyalah seberapa besar RAM komputer kita.
+
+```java
+public class TipeDataString {
+
+  public static void main(String[] args) {
+
+    String firstName = "Eko Kurniawan";
+    String lastName = "Khannedy";
+
+    System.out.println(firstName);
+    System.out.println(lastName);
+
+    // menambah firstName dengan spasi dan lastName
+    String fullName = firstName + " " + lastName;
+    
+    System.out.println(fullName);
+
+  }
+}
+```
+#### Escape Sequence Tipe String
+Escape sequence merupakan karakter khusus, seperti ENTER, TAB, " (kutip dua), dan lain-lain. Berikut contoh escape sequence yang didukung oleh Java di data String.
+
+| Escape Sequence | Karakter |
+|:---------------:|:--------:|
+|       \n        |  ENTER   |
+|       \t        |   TAB    |
+|       \'        |    '     |
+|       \"        |    "     |
+|        \        |    \     |
+
+```java
+public class TipeDataString {
+
+  public static void main(String[] args) {
+
+    String fullName = "Eko\nKurniawan\nKhannedy";
+    System.out.println(fullName); // Eko<ENTER>Kurniawan<ENTER>Khannedy
+
+    String say = "Saya mengucapkan : \"Selamat Belajar\" ";
+    System.out.println(say); // Saya mengucapkan : "Selamat Belajar"
+
+  }
+}
+```
+#### String Text Block
+Sejak di `Java versi 13`. Diperkenalkan fitur yang bernama String Text Block. Fitur ini merupakan fitur yang bisa kita gunakan untuk membuat String yang lebih dari satu baris secara sekaligus. Cara pembuatan String Text Block adalah dengan menggunakan """ (kutip dua sebanyak 3 kali) di awal dan akhir data String.
+```java
+public class TipeDataString {
+
+  public static void main(String[] args) {
+
+    String story = """
+        Hallo, nama saya adalah Eko Kurniawan Khannedy
+        Saat ini, saya kerja sebagai Technical Architect
+        Selain kerja, saya juga sering sharing soal programming
+        di website Programmer Zaman Now
+        """;
+
+    System.out.println(story);
+
+  }
+}
+```
+#### Tonton Semua Materi Java di Programmer Zaman Now
+{: .alert .alert-info .text-center}

@@ -5,5 +5,7 @@ public class Variable {
         lastName = "Gosling";
         // menggunakan var harus menggunakan java versi 10 keatas!
 //        var company = "Sun Microsystems";
+        byte iniByte = 100;
+        Byte iniByteObject = iniByte;
     }
 }
