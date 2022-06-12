@@ -270,5 +270,5 @@ public class TipeDataString {
   }
 }
 ```
-#### Tonton Semua Materi Java di Programmer Zaman Now
+#### Tonton Semua Materi Java di ProgrammerZamanNow.com
 {: .alert .alert-info .text-center}
