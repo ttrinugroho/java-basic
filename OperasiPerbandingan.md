@@ -29,5 +29,5 @@ public class OperasiPerbandingan {
 ```
 Operasi perbandingan dapat dilakukan di semua tipe data number.
 
-#### Selanjutnya [Tipe Data Array](./OperasiPerbandingan.md)
+#### Selanjutnya [Operasi Boolean](./OperasiBoolean.md)
 > Tonton Semua Materi Pemrograman Dasar Java Basic di [ProgrammerZamanNow](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir);

@@ -62,5 +62,5 @@ public class UnaryOperator {
     }
 }
 ```
-#### Selanjutnya [Tipe Data Array](./OperasiPerbandingan.md)
+#### Selanjutnya [Operasi Perbandingan](./OperasiPerbandingan.md)
 > Tonton Semua Materi Pemrograman Dasar Java Basic di [ProgrammerZamanNow](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir);

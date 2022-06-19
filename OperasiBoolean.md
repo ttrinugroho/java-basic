@@ -6,7 +6,7 @@ Ini ada beberapa operator boolean:
 | Operator      | Logic Name | Symbol Name      | Keterangan |
 |:--------------|:-----------|:-----------------|:-----------|
 | &&            | AND        | Ampersand        | Dan        |
-| `&#124;&#124;`| OR         | vertical bar     | Atau       |
+| <code>&#124;&#124;</code> | OR         | vertical bar     | Atau       |
 | !             | NOT        | Exclamation mark | Kebalikan  |
 
 ### Operasi && (Logical And)
@@ -24,10 +24,10 @@ Nilai1 dan Nilai2 harus true agar mendapat nilai true.
 
 | Nilai1  |    Operator    | Nilai2  | Hasil    |
 |:--------|:--------------:|:--------|:---------|
-| `true`  | `&#124;&#124;` | `true`  | `true`   |
-| `true`  | `&#124;&#124;` | `false` | `true`   |
-| `false` | `&#124;&#124;` | `true`  | `true`   |
-| `false` | `&#124;&#124;` | `false` | `false`  |
+| `true`  | <code>&#124;&#124;</code> | `true`  | `true`   |
+| `true`  | <code>&#124;&#124;</code> | `false` | `true`   |
+| `false` | <code>&#124;&#124;</code> | `true`  | `true`   |
+| `false` | <code>&#124;&#124;</code> | `false` | `false`  |
 
 Nilai1 atau Nilai2, salah satu harus berilai true agar mendapat nilai true. 
 
@@ -55,3 +55,5 @@ public class OperasiBoolean {
     }
 }
 ```
+### Selanjutnya >> [Method](./Method.md)
+> Tonton Semua Materi Pemrograman Dasar Java Basic di [ProgrammerZamanNow](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir);
