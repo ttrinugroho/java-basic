@@ -7,5 +7,10 @@ public class Variable {
 //        var company = "Sun Microsystems";
         byte iniByte = 100;
         Byte iniByteObject = iniByte;
+        String[][] members = {
+                {"Teguh","Tri","Nugroho"},
+                {"Eko","Kurniawan","Khanedi"}
+        };
+        System.out.println(members[0][0]);
     }
 }

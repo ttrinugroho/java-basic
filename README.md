@@ -3,6 +3,8 @@ Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termas
 
 Repository ini merupakan hasil rangkuman belajar java dasar yang saya ikuti di course **Pemrogramman Java: Pemula sampai Mahir** dari ProgrammerZamanNow.com.
 
+> Tonton Semua Materi Pemrograman Dasar Java Basic di [ProgrammerZamanNow](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir);
+
 ## Variable
 Membuat `variable` di java kita perlu menentukan tipe data yang akan kita gunakan. Dan setelah `variable` dibuat, `variable` tidak dapat diubah tipe data nya.
 
@@ -55,7 +57,5 @@ public class Variable {
     lastName = "Santosa"; // Error
 }
 ```
-Contoh pembuatan variable java
-- type Number
-- type String
-- type boolean
+> Tonton Semua Materi Pemrograman Dasar Java Basic di [ProgrammerZamanNow](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir);
+#### Selanjutnya [Tipe Data](/TipeData.md);
