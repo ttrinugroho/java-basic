@@ -270,5 +270,5 @@ public class TipeDataString {
   }
 }
 ```
-#### Selanjutnya [Tipe Data Array](../TipeDataArray.md)
+#### Selanjutnya [Tipe Data Array](./TipeDatBukanPrimitif.md)
 > Tonton Semua Materi Pemrograman Dasar Java Basic di [ProgrammerZamanNow](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir);

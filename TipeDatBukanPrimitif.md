@@ -64,3 +64,5 @@ public class KonversiTipeDataBukanPrimitif {
 ```
 Jadi semua data bukan primitif memiliki function seperti diatas, tinggal digunakan untuk melakukan konversi ke tipe data primitif.
 
+#### Selanjutnya [Tipe Data Array](./TipeDataArray.md)
+> Tonton Semua Materi Pemrograman Dasar Java Basic di [ProgrammerZamanNow](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir);

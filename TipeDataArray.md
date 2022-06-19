@@ -60,6 +60,6 @@ public class ArrayDalamArray {
 }
 ```
 
-#### Selanjutnya [Operasi Matematika](../OperasiMatematika.md)
+#### Selanjutnya [Operasi Matematika](./OperasiMatematika.md)
 
 > Tonton Semua Materi Pemrograman Dasar Java Basic di [ProgrammerZamanNow](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir);

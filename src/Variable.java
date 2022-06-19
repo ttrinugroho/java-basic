@@ -12,5 +12,6 @@ public class Variable {
                 {"Eko","Kurniawan","Khanedi"}
         };
         System.out.println(members[0][0]);
+        System.out.println(100%10);
     }
 }
