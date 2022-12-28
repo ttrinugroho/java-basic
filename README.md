@@ -50,11 +50,13 @@ Secara default nilai variable dapat di ubah-ubah. Namun kita kadang ingin membua
 Untuk membuat variable constan di java cukup dengan menambahkan kata kunci `final` diawal. Semua variable yang bersifat `final` tidak akan bisa diubah lagi nilainya setelah pertama kali dimasukkan nilainya. Jika kita coba ubah, maka otomatis akan erorr.
 ```java
 public class Variable {
-    final var firstName = "Teguh";
-    firstName = "Budi"; // Error
-    final String lastName;
-    lastName = "Tri Nugroho";
-    lastName = "Santosa"; // Error
+    public static void main(String[] args) {
+        final var firstName = "Teguh";
+        firstName = "Budi"; // Error
+        final String lastName;
+        lastName = "Tri Nugroho";
+        lastName = "Santosa"; // Error
+    }
 }
 ```
 > Tonton Semua Materi Pemrograman Dasar Java Basic di [ProgrammerZamanNow](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir);

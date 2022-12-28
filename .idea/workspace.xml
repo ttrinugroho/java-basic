@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fc5dfc1-292a-4de0-bbaa-5a5dc83d26cd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/OperasiBoolean.md" beforeDir="false" afterPath="$PROJECT_DIR$/OperasiBoolean.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OperasiMatematika.md" beforeDir="false" afterPath="$PROJECT_DIR$/OperasiMatematika.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OperasiPerbandingan.md" beforeDir="false" afterPath="$PROJECT_DIR$/OperasiPerbandingan.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Method.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TipeData.md" beforeDir="false" afterPath="$PROJECT_DIR$/TipeData.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

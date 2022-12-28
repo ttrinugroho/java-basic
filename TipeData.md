@@ -1,31 +1,44 @@
 ## Tipe Data di Java
-Java adalah bahasa yang sangat diketik; Oleh karena itu Anda harus mendeklarasikan tipe data untuk semua variabel.
+Seperti pembahasan sebelumnya, variable di java harus di tetapkan tipe datanya. Dan kali ini kita akan membahas tipe data yang ada di Java.
 
-Karena itu Kamu harus tahu tipe data yang ada di di Java.
+Di java tipe data di bagi menjadi 2, yaitu:
+1. Tipe Data Primitif : `byte`, `short`, `int`, `long`, `float`, `double`, `boolean` and `char`.
+2. Tipe Data Bukan Primitif: `String`, `Array`, `Class`.
 
+***Tipe data primitif*** adalah tipe data bawaan dari bahasa pemrograman yang tidak memiliki method tambahan dan ditentukan ukuran dan tipe nilai variabel.
+
+Seperti yang telah kamu ketahui di atas, data primitif ada 8 , mari kita bahas.
 ### Tipe Data Number
-Data number sering kali kita gunakan dalam kehidupan sehari-hari seperti uang, jumlah, nilai ujian sekolah, harga barang, dan lain-lain.
-
-Di Java tidak hanya memiliki 1 tipe data number, dan masing-masing memiliki kapasitas daya tampung yang berbeda. Oleh karena itu ada banyak sekali tipe data number, dan kita bisa gunakan sesuai dengan kebutuhan kita.
-
-Di Java Tipe Data Number dikelompokan menjadi dua 
-- Integer; yaitu tipe data number bilangan bulat
-- Floating Point; yaitu tipe data number bilangan desimal
+Tipe Data Number primitif dibagi menjadi dua:
+- Integer; menyimpan bilangan bulat positive or negative, tanpa desimal. Tipe data yang valid adalah `byte`, `short`, `int`, dan `long`.
+- Floating Point; mewakili angka pecahan decimal. Dua tipe data yang valid `double` dan `float`
 
 Masing-masing kelompok di bagi lagi menurut batas minimal dan maksimal yang bisa ditampung serta annya pun berbeda-beda.
 
 #### Tipe Data Interger
+
 | Tipe Data |       Minimal        |       Maximal       | Ukuran | Nilai Default |
 |:---------:|:--------------------:|:-------------------:|:------:|:-------------:|
 |   byte    |         -128         |         127         | 1 byte |       0       |
 |   short   |        -32768        |        32767        | 2 byte |       0       |
 |    int    |     -2147483648      |     2147483647      | 4 byte |       0       |
 |   long    | -9223372036854775808 | 9223372036854775807 | 8 byte |       0       |
+
+- `byte`: Tipe data `byte` dapat menyimpan bilangan bulat dari -128 hingga 127. Ini dapat digunakan sebagai ganti int atau tipe integer lainnya untuk menghemat memori ketika Anda yakin bahwa nilainya akan berada dalam -128 dan 127.
+- `short`: Tipe data `short` dapat menyimpan bilangan bulat dari -32768 hingga 32767:
+- `int`: Tipe data `int` dapat menyimpan bilangan bulat dari -2147483648 hingga 2147483647. Secara umum, dan dalam tutorial kita, tipe data int adalah tipe data yang disukai saat kita membuat variabel dengan nilai numerik.
+- `long`: Tipe data `long` dapat menyimpan bilangan bulat dari -9223372036854775808 hingga 9223372036854775807. Ini digunakan ketika int tidak cukup besar untuk menyimpan nilainya. Perhatikan bahwa Anda harus mengakhiri nilainya dengan 'L'.
+
 #### Tipe Data Floating Point
+Kamu harus menggunakan tipe ***floating point*** kapan pun Anda membutuhkan angka dengan desimal, seperti 9.99 atau 3.14515 .
+
 | Tipe Data |       Minimal       |      Maximal       | Ukuran  | Nilai Default |
 |:---------:|:-------------------:|:------------------:|:-------:|:-------------:|
 |   float   |      3.4e−038       |      3.4e+038      | 4 bytes |      0.0      |
 |  double   |      1.7e−308       |      1.7e+308      | 8 byte  |      0.0      |
+
+Tipe data `float` dan `double` dapat menyimpan bilangan pecahan. Perhatikan bahwa Anda harus mengakhiri nilainya dengan 'f' untuk float dan 'd' untuk double:
+
 ### Membuat Variable Tipe Data Number
 Sekarang kita coba membuat variable dengan macam-macam tipe data number di Java
 ```java
@@ -38,13 +51,13 @@ public class TypeDataNumber {
         long thisLong2 = 1000000000L;
     
         float thisFloat = 10.10F;
-        double thisDouble = 10.10;
+        double thisDouble = 10.10D;
     }
 }
 ```
 Untuk tipe data `float` dan `long` agak sedikit berbeda;
-- long ;kita bisa (red: tidak wajib) menambahkan `L` (besar atau kecil) di belakang angka untuk menandakan bahwa itu adalah `long` .
-- float ;kita wajib menambahkan `F` (besar atau kecil) di belakang angka.
+- `long` ; kita bisa (red: tidak wajib) menambahkan `L` (besar atau kecil) di belakang angka untuk menandakan bahwa itu adalah `long` .
+- `float` ; kita wajib menambahkan `F` (besar atau kecil) di belakang angka.
 
 Di Java kita juga bisa menambahkan garis bawah (`_`) pada data. Java tidak mengartikannya khusus karena ini biasanya digunakan untuk memudahkan ita ketika membaca angka.
 
@@ -62,10 +75,12 @@ public class TypeDataNumber {
     }
 }
 ```
+
 Sekarang kita bisa membaca angka pada kode program diatas lebih mudah dibandingkan tanpa garis bawah.
 
 ### Literals
 Tipe data number di Java secara default merupakan _decimal_ literals, yaitu bilangan basis 10. Kadang kita butuh membuat number dengan literals lain. Dan Java mendukung beberapa literals, diantaranya:
+
 1. Decimal:  : Basis 10, yang artinya digitnya adalah 0 sampai 9. Secara default number di Java adalah decimal (basis 10).
 2. Hexadecimal : Basis 16, dimana digitnya adalah 0 sampai 9 dan A sampai F. Untuk membuatan hexadecimal, kita wajib menambahkan 0x (nol + x) diawal angka.
 3. Binary : Basis 2, dimana digitnya adalah 0 dan 1. Untuk membuat binary, kita wajib menambahkan 0b (nol + b) di awal angka.
@@ -80,13 +95,15 @@ public class TypeDataNumber {
 }
 ```
 Untuk penulisan :
-- hexadesimal diawali dengan 0x....
-- binary diawali dengan 0b....
+- `hexadesimal` diawali dengan 0x....
+- `binary` diawali dengan 0b....
 
 ### Konversi Tipe Data Number
 Misal kita ingin melakukan konversi dari tipe data long ke int, atau dari double ke long, dan lain-lain. Konversi tipe data number di Java bisa dilakukan secara :
+
 - Widening Casting (otomatis),dan
 - Narrowing Casting (manual)
+
 #### Widening Casting (otomatis)
 Widening Casting terjadi dimana tipe data dengan daya tampung lebih kecil di konversi ke tipe data dengan daya tampung yang lebih besar. Seperti ini urutannya:
 ```
